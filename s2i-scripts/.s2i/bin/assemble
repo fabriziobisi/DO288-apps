@@ -11,7 +11,11 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-ls -a /tmp
+ls -a /tmp/scripts
+if [ -f /tmp/scripts/assemble ]; then
+	echo "show assemble"
+	cat /tmp/scripts/assemble
+fi
 echo "show /tmp/src"
 ls -a /tmp/src
 
