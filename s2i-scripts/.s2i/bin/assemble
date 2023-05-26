@@ -11,7 +11,9 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-tree -a /tmp
+ls -a /tmp
+echo "show /tmp/src"
+ls -a /tmp/src
 
 cp -Rf /tmp/src/*.html ./
 
